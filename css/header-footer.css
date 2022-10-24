@@ -1,0 +1,145 @@
+/**header origin
+https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535
+/
+
+
+/* Basic styling */
+
+header {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #F0EDE6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header a {
+    color: #D5927F;
+    text-decoration: none;
+}
+.bg-dark {
+    background-color: #CF5B3A;
+    color: white;
+}
+.menu,
+.submenu {
+    list-style-type: none;
+}
+
+.item {
+    padding: 10px;
+}
+header li a:hover {
+color: #CF5B3A;
+cursor: pointer;
+}
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    margin: auto;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+/* Submenu up from mobile screens */
+.submenu {
+    display: none;
+}
+
+.submenu-active .submenu {
+    display: block;
+}
+
+.has-submenu>a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    content: "\f078";
+    color: #D5927F;
+    padding-left: 5px;
+}
+
+.subitem a {
+    padding: 10px 15px;
+}
+
+.submenu-active {
+    background-color: #F0EDE6;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+
+    /* Desktop menu */
+    @media all and (min-width: 960px) {
+        .menu {
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            background: none;
+        }
+
+        .item {
+            position: relative;
+            display: block;
+            width: auto;
+        }
+
+        .submenu-active .submenu {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 68px;
+            background: #F0EDE6;
+        }
+
+        .toggle {
+            display: none;
+        }
+
+        .submenu-active {
+            border-radius: 0;
+        }
+    }
+}
+/*footer*/
+
+    footer {
+        text-align: center;
+        background-color: #F0EDE6;
+    }
+
+    footer ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }

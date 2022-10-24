@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    text-align: center;
+    background-color: #F0EDE6;
+}
+h1,
+h2,
+h3 {
+    color: #D5927F;
+    font-family: 'Amatic SC', cursive;
+}
+h1 {
+    font-size: 48px;
+    padding: 8% 0;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+.mx-text {
+    margin: 10% 10%;
+}
+.mx-bio {
+    margin: 0 20%;
+    text-align: center;
+}
+article {
+    margin: 8% 0;
+}
+
+/*membres actifs*/
+
+section:last-of-type > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#members {
+    padding: 8% 0;
+}
+#members div {
+    padding-bottom: 5%;
+}
