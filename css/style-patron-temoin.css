@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+.mx-text {
+    margin: 0 10%;
+}
+main {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding-bottom: 200px;
+}
+
+h1, h2{
+    color: var(--secondary-color);
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 8% 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 8% 3%;
+    text-align: left;
+}
+
+p, main li {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+main img {
+    width: 100%;
+    margin-top: 15%;
+}
+main li {
+    padding-bottom: 15px;
+}
