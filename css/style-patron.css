@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*général*/
+
 main {
     text-align: center;
     background-color: var(--primary-color);
