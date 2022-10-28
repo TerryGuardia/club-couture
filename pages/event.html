@@ -14,6 +14,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Événements - Au fil et à mesure</title>
+    <style>
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,67 +48,95 @@
         </nav>
     </header>
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th rowspan="2"></th>
-                    <th>Lundi</th>
-                    <th>Mardi</th>
-                    <th colspan="2">Mercredi</th>
-                    <th>Jeudi</th>
-                    <th colspan="2">Vendredi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">14H00</td>
-                    <td rowspan="7">Couture</td>
-                    <td></td>
-                    <td rowspan="9">Tricot et crochet</td>
-                    <td></td>
-                    <td rowspan="9"></td>
-                    <td rowspan="9">Tricot et crochet</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="4">Atelier enfant</td>
-                    <td rowspan="8">Couture</td>
-                    <td rowspan="4">Atelier bébé</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">15H00</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">16H00</td>
-                </tr>
-                <tr>
-                    <td rowspan="4">Couture</td>
-                    <td rowspan="4">Couture</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">17H00</td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>18H00</td>
-                    <td></td>
-                </tr>
-            <tfoot>
-                <tr>
-                    <td></td>
-                    <td>Salle 1</td>
-                    <td>Salle 2</td>
-                    <td>Salle 1</td>
-                    <td>Salle 2</td>
+        <section>
+            <h1>NOTRE PLANNING HEBDOMADAIRE</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th colspan="2">Mercredi</th>
+                        <th>Jeudi</th>
+                        <th colspan="2">Vendredi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">14H00</th>
+                        <td class="fond_rose" rowspan="7">Couture</td>
+                        <td></td>
+                        <td class="fond_jaune" rowspan="9">Tricot et crochet</td>
+                        <td></td>
+                        <td rowspan="9"></td>
+                        <td class="fond_jaune" rowspan="9">Tricot et crochet</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="fond_bleu" rowspan="4">Atelier enfant</td>
+                        <td class="fond_rose" rowspan="8">Couture</td>
+                        <td class="fond_bleu" rowspan="4">Atelier bébé</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">15H00</th>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <th rowspan="2">16H00</th>
+                    </tr>
+                    <tr>
+                        <td class="fond_rose" rowspan="4">Couture</td>
+                        <td class="fond_rose" rowspan="4">Couture</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">17H00</th>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <th>18H00</th>
+                    </tr>
+                <tfoot>
                     <td></td>
                     <td>Salle 1</td>
                     <td>Salle 2</td>
-                </tr>
-            </tfoot>
-            </tbody>
-        </table>
+                    <td>Salle 1</td>
+                    <td>Salle 2</td>
+                    <td></td>
+                    <td>Salle 1</td>
+                    <td>Salle 2</td>
+                    </tbody>
+                </tfoot>
+
+            </table>
+        </section>
+        <section>
+            <h2>NOS ATELIERS</h2>
+            <article>
+                <h3>TRICOT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa at eligendi aspernatur provident
+                    asperiores ea qui quod recusandae doloremque.</p>
+            </article>
+            <article>
+                <h3>COUTURE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa at eligendi aspernatur provident
+                    asperiores ea qui quod recusandae doloremque.</p>
+            </article>
+            <article>
+                <h3>CROCHET</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa at eligendi aspernatur provident
+                    asperiores ea qui quod recusandae doloremque.</p>
+            </article>
+            <article>
+                <h3>COSTUME</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa at eligendi aspernatur provident
+                    asperiores ea qui quod recusandae doloremque.</p>
+            </article>
+            <article>
+                <h3>ACCESSOIRES</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa at eligendi aspernatur provident
+                    asperiores ea qui quod recusandae doloremque.</p>
+            </article>
+        </section>
     </main>
     <footer>
         <ul>
