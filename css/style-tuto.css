@@ -6,14 +6,14 @@
 
 main {
     text-align: center;
-    background-color: #F0EDE6;
+    background-color: var(--primary-color);
     padding-bottom: 10%;
 }
 
 h1,
 h2,
 h3 {
-    color: #D5927F;
+    color: var(--secondary-color);
     font-family: 'Amatic SC', cursive;
 }
 
@@ -63,7 +63,7 @@ main section div div p {
 }
 main section div div p::after {
     content: " lire la suite";
-    color: #D5927F;
+    color: var(--secondary-color-dark);
 }
 /*sticky*/
 
@@ -75,7 +75,7 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
 .sticky {
 	position: sticky;
 	top: 0;
-    background-color: #D5927F;
+    background-color: var(--secondary-color);
     padding: 15px 0;
 }
 
@@ -100,7 +100,7 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
 }
 .list-inline a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color-white);
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
 }

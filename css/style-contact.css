@@ -8,12 +8,12 @@
 
 main {
     text-align: center;
-    background-color: #F0EDE6;
+    background-color: var(--primary-color);
 }
 
 h1,
 button {
-    color: #D5927F;
+    color: var(--secondary-color);
     font-family: 'Amatic SC', cursive;
 }
 
@@ -29,7 +29,7 @@ h1 {
 /*info*/
 
 article {
-    color: #D5927F;
+    color: var(--secondary-color);
     margin-bottom: 5%;
 }
 
@@ -44,9 +44,9 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
-    width: 80%;
-    background-color: #D5927F;
-    color: white;
+    width: 85%;
+    background-color: var(--secondary-color);
+    color: var(--text-color-white);
     padding: 30px;
     border-radius: 15px;
 }
@@ -75,12 +75,12 @@ button {
     font-size: 28px;
     font-weight: bold;
     border-radius: 20px;
-    border: #D5927F 2px;
+    border: var(--secondary-color) 2px;
 }
 button:hover {
-    background-color: #CF5B3A;
+    background-color: var(--secondary-color-dark);
     cursor: pointer;
-    color: white;
+    color: var(--text-color-white);
    }
 /*map*/
 

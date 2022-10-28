@@ -5,12 +5,12 @@
 }
 main {
     text-align: center;
-    background-color: #F0EDE6;
+    background-color: var(--primary-color);
 }
 h1,
 h2,
 h3 {
-    color: #D5927F;
+    color: var(--secondary-color);
     font-family: 'Amatic SC', cursive;
 }
 h1 {
