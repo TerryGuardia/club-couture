@@ -4,6 +4,48 @@
     box-sizing: border-box;
 }
 
+/*général*/
+
+.mx-text {
+    margin: 0 10%;
+}
+
+main {
+    background-color: var(--primary-color);
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+
+h1,
+h2,
+h3 {
+    color: var(--secondary-color);
+    font-family: 'Amatic SC', cursive;
+}
+
+p,
+main a {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 8% 0;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 10% 0;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+/*planning*/
+
 th,
 td {
     border: 1px solid var(--secondary-color);
@@ -20,43 +62,6 @@ table {
     font-size: 12px;
 }
 
-main {
-    text-align: center;
-    background-color: var(--primary-color);
-    padding-bottom: 100px;
-}
-
-
-h1,
-h2,
-h3 {
-    color: var(--secondary-color);
-    font-family: 'Amatic SC', cursive;
-}
-
-p,
-main a {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-h1 {
-    font-size: 48px;
-    padding: 8% 0;
-}
-
-h2 {
-    font-size: 40px;
-    margin: 8% 0;
-}
-
-h3 {
-    font-size: 24px;
-    margin: 8%;
-}
-
 .fond_rose {
     background-color: #D998DA;
 }
@@ -71,4 +76,30 @@ h3 {
 
 tfoot {
     font-style: italic;
+}
+
+/*link*/
+
+section:nth-of-type(2) div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main a {
+    background-color: var(--secondary-color);
+    color: var(--text-color-white);
+    text-decoration: none;
+    width: 20%;
+    padding: 5px 0;
+}
+
+article {
+    height: 220px;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
 }
