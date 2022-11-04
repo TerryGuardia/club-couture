@@ -54,7 +54,7 @@ article {
 #fondateur div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #fondateur article {
@@ -63,16 +63,42 @@ article {
 
 /*membres actifs*/
 
-section:last-of-type>div {
+#members {
+    padding: 15% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-#members {
-    padding: 15% 0;
+
+
+@media screen and (min-width: 840px) {
+
+    #members {
+        margin: 0 5% 0 5%;
+        padding-top: 10%;
+    }
+
+    #members div {
+        padding: 0 3% 0 3%;
+    }
 }
 
-#members div {
-    padding-bottom: 5%;
+@media screen and (min-width: 1000px) {
+
+    article {
+        margin: 5% 0;
+    }
+
+    .mx-text {
+        margin: 10% 15%;
+    }
+
+    #members {
+        padding-top: 10%;
+    }
+
+    #members div {
+        padding: 0 4% 0 4%;
+    }
 }

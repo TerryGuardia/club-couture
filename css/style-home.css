@@ -46,32 +46,51 @@ a {
 .mx-text {
     margin: 0 10%;
 }
-section > img {
+
+section>img {
     width: 100%;
 }
+
 /*link vers contact*/
 
 #section-presentation div {
-    margin: 12% 0;
+    margin: 10% 0;
 }
 
-#section-presentation div p {
+#section-presentation div div p {
     font-family: 'Amatic SC', cursive;
     font-size: 32px;
     text-align: center;
 }
 
-#section-presentation div a {
+#section-presentation div div a {
     font-family: 'Amatic SC', cursive;
 }
 
-/*section-news*/
-/*Pour 600 + pixels
-section:nth-of-type(2) div {
-    display: flex;
-    justify-content: space-evenly;
+@media screen and (min-width: 690px) {
+    #section-presentation {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 5%;
+    }
+
+    #section-presentation div {
+        margin: 0;
+    }
+    #section-presentation img {
+        width: 50vw;
+    }
 }
-*/
+
+/*section-news*/
+
+@media screen and (min-width: 690px) {
+    section:nth-of-type(2) div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
 section:nth-of-type(2) article {
     margin: 3% 0;
 }
@@ -110,7 +129,7 @@ section:last-of-type div {
 
 section:last-of-type article {
     margin-bottom: 10%;
-    width: 250px;
+    width: 320px;
     padding: 20px;
 }
 

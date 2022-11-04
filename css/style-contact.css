@@ -44,7 +44,7 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
-    width: 85%;
+    width: 360px;
     background-color: var(--secondary-color);
     color: var(--text-color-white);
     padding: 30px;
