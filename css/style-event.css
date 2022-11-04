@@ -103,3 +103,29 @@ article {
     align-items: center;
     margin-bottom: 10%;
 }
+
+@media screen and (min-width: 600px) {
+
+    table {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 810px) {
+
+    table {
+        height: 300px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        padding-bottom: 10%;
+
+    }
+
+    table {
+        height: 400px;
+    }
+}
