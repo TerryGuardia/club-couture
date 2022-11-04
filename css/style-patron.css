@@ -38,12 +38,15 @@ p {
     text-align: justify;
     padding-bottom: 10%;
 }
+
 .mx-text {
     margin: 0 10%;
 }
+
 main a {
     text-decoration: none;
 }
+
 /*patron*/
 
 main section div {
@@ -51,6 +54,7 @@ main section div {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 main section div div {
     margin: 3% 0;
     width: fit-content;
@@ -58,6 +62,7 @@ main section div div {
     display: flex;
     flex-direction: column;
 }
+
 /*sticky*/
 
 /*origin
@@ -66,8 +71,8 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
 
 /* Sticky navigation*/
 .sticky {
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
     background-color: var(--secondary-color);
     padding: 15px 0;
 }
@@ -79,24 +84,34 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
  * 2. Make sure it doesn't mess up the DOM flow
  */
 .list-inline {
-	list-style: none;
-	margin-left: -0.5em;
-	margin-right: -0.5em;
-	padding: 0;
+    list-style: none;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
 }
 
-.list-inline > li:before {
-	content: "\200B"; /* 1 */
-	position: absolute; /* 2 */
+.list-inline>li:before {
+    content: "\200B";
+    /* 1 */
+    position: absolute;
+    /* 2 */
 }
+
 .list-inline a {
     text-decoration: none;
     color: var(--text-color-white);
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
 }
+
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        margin: 5% 0;
+    }
 }

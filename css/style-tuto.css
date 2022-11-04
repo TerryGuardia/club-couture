@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 30px;
 }
 
 p {
@@ -108,4 +108,10 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
 }
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        margin: 5% 0;
+    }
 }
