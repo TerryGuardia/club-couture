@@ -92,11 +92,14 @@ iframe {
 
 @media screen and (min-width: 810px) {
 
+     h1 {
+        padding-bottom: 0;
+     }
     main div {
         height: 800px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 3fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
         "form info"
         "form map"
@@ -110,7 +113,7 @@ iframe {
     article {
         grid-area: info;
         margin: 0;
-        align-self: center;
+        align-self:flex-end;
     }
     iframe {
         grid-area: map;
