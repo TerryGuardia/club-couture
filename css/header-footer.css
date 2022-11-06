@@ -151,3 +151,9 @@ cursor: pointer;
         list-style: none;
         justify-content: space-evenly;
     }
+
+    /*main*/
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
