@@ -5,7 +5,9 @@
     --text-color-white: white;
 
 }
-
+body {
+    background: url(/img/mobile/pattern.png);
+}
 /*main*/
 main {
     max-width: 1200px;
