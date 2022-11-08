@@ -133,6 +133,7 @@ header li a:hover {
         }
 
         .submenu-active .submenu {
+            width: 100%;
             display: block;
             position: absolute;
             left: 0;
