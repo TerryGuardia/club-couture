@@ -90,7 +90,11 @@ section>img {
         justify-content: space-evenly;
     }
 }
-
+@media screen and (max-width: 1000px) {
+    section:nth-of-type(2) div article:last-of-type {
+        display: none;
+    }
+}
 section:nth-of-type(2) article {
     margin: 3% 0;
 }
@@ -106,6 +110,12 @@ section:nth-of-type(3) a {
     color: var(--text-color-white);
     padding: 20px 10px;
     margin-top: 25%;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+
+section:nth-of-type(3) a:hover {
+    background-color: var(--secondary-color-dark);
+    font-weight: bold;
 }
 
 /*section-création*/
@@ -145,4 +155,9 @@ section:last-of-type a {
     background-color: var(--secondary-color);
     color: var(--text-color-white);
     padding: 10px 20px;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+section:last-of-type a:hover {
+    background-color: var(--secondary-color-dark);
+    font-weight: bold;
 }

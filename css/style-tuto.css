@@ -53,6 +53,9 @@ main section div {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+main section div img {
+    border-radius: 10px;
+}
 main section div div {
     margin: 3% 0;
     width: fit-content;

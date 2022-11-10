@@ -60,6 +60,7 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
     top: 0;
     background-color: var(--secondary-color);
     padding: 15px 0;
+    z-index: 999;
 }
 
 /**
@@ -96,3 +97,65 @@ html {
 }
 
 /*carousel*/
+
+main .container {
+    display: flex;
+    position: relative;
+    top: 50%;
+    width: 350px;
+    height: 320px;
+    overflow: hidden;
+    margin: auto;
+}
+main .img-carou {
+    position: relative;
+    width: 350px;
+    height: 320px;
+    flex-shrink: 0;
+}
+main img {
+    width: 80%;
+    height: 80%;
+    margin-top: 3%;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+figcaption {
+    display: flex;
+    justify-content: space-around;
+}
+figcaption p {
+padding: 0;
+}
+figure {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.container a {
+    font-size: 3em;
+    color: var(--text-color-white);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 810px) {
+    main .container {
+        width: 700px;
+        height: 620px;
+    }
+
+   main .img-carou {
+        width: 700px;
+        height: 550px;
+    }
+    
+}

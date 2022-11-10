@@ -10,60 +10,71 @@
     margin: 0 10%;
 }
 
+@media screen and (min-width: 1000px) {
+    .mx-text {
+        margin: 0 20%;
+    }
+}
+
 main {
     text-align: center;
     background-color: var(--primary-color);
 }
 
 h1,
-h2, 
+h2,
 #promote {
     color: var(--secondary-color);
     font-family: 'Amatic SC', cursive;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 48px;
     padding: 8% 0;
 }
 
-h2, #promote {
-    font-size: 32px;
+h2 {
+    font-size: 39px;
     margin: 10% 3%;
 }
+
+#promote {
+    font-size: 36px;
+    margin: 10% 3%;
+}
+
 section:nth-of-type(2) h2 {
     text-align: left;
 }
+
 p,
 main li {
     font-family: 'Open Sans', sans-serif;
     text-align: left;
 }
+
 main li {
     padding-bottom: 15px;
 }
 
 /*images de présentation*/
-
-section:nth-of-type(1) div {
+section:first-of-type p {
+    margin-bottom: 5%;
+}
+.gallerie {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 5% 0;
- }
- section:nth-of-type(1) div div:nth-of-type(2) {
-     display: flex;
-     flex-direction: column;
-     width: 49%;
-     margin-left: 1%;
-  }
-  section:nth-of-type(1) div div:nth-of-type(2) img {
-height: 50%;
-  }
-  section:nth-of-type(1) div div:nth-of-type(2) img:nth-of-type(1) {
-     margin-bottom: 3%;
- 
-  }
+    max-width: 810px;
+    margin: auto;
+}
+
+.gallerie div {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /*section etape*/
 
 #stepbystep article div {
@@ -72,10 +83,45 @@ height: 50%;
     justify-content: space-evenly;
     margin: 8% 0;
 }
+
+@media screen and (min-width: 810px) {
+    #stepbystep article div {
+        margin: 4% 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #stepbystep article div {
+        margin: 2% 0;
+    }
+}
+
+/*section matériel*/
+@media screen and (min-width: 810px) {
+    .mats h2 {
+        margin: 5% 15%;
+    }
+
+    .mats ul {
+        margin: 0 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .mats h2 {
+        margin-left: 5% 25%;
+    }
+
+    .mats ul {
+        margin-left: 0 35%;
+    }
+}
+
 /*images section etape*/
 figure {
     margin: 3% 0;
 }
+
 figcaption {
     text-align: left;
 }
@@ -85,15 +131,29 @@ figure img {
 }
 
 #promote {
-text-align: center;
+    text-align: center;
 }
+
 #promote a {
     text-decoration: none;
     color: var(--secondary-color-dark);
 }
 
- /*video*/
- 
- iframe {
+/*video*/
+
+iframe {
     margin: 15% 0 20% 0;
- }
+}
+
+@media screen and (min-width: 810px) {
+    iframe {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    iframe {
+        margin: 10% 0 15% 0;
+    }
+}
