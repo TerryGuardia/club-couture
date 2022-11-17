@@ -114,10 +114,19 @@ iframe {
         grid-area: info;
         margin: 0;
         align-self:flex-end;
+        margin-bottom: 5%;
     }
     iframe {
         grid-area: map;
         margin: 0;
         align-self: flex-start;
+        width: 90%;
+        height: 71%;
     }
+}
+@media screen and (min-width: 1000px) {
+
+form {
+    max-width: 410px;
+}
 }

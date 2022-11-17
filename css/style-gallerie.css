@@ -114,8 +114,8 @@ main .img-carou {
     flex-shrink: 0;
 }
 main img {
-    width: 80%;
-    height: 80%;
+    width: 320px;
+    height: 280px;
     margin-top: 3%;
 }
 
@@ -149,13 +149,33 @@ figure {
 
 @media screen and (min-width: 810px) {
     main .container {
-        width: 700px;
-        height: 620px;
+        width: 525px;
+        height: 480px;
     }
 
    main .img-carou {
-        width: 700px;
-        height: 550px;
+        width: 525px;
+        height: 480px;
     }
-    
+    main img {
+        width: 500px;
+        height: 440px;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    main .container {
+        width: 630px;
+        height: 576px;
+    }
+
+   main .img-carou {
+        width: 630px;
+        height: 576px;
+    }
+    main img {
+        width: 580px;
+        height: 500px;
+        margin-top: 3%;
+    }
 }
