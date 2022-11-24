@@ -121,12 +121,12 @@ main img {
 
 .next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 0;
 }
 .prev {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
 }
 figcaption {
