@@ -138,7 +138,21 @@ figure img {
     text-decoration: none;
     color: var(--secondary-color-dark);
 }
-
+@media screen and (max-width: 620px) {
+    figure img {
+        width: 200px;
+    }
+}
+@media screen and (min-width: 621px) and (max-width: 1100px) {
+    figure img {
+        width: 312px;
+    }
+}
+@media screen and (min-width: 1101px) {
+    figure img {
+        width: 400px;
+    }
+}
 /*video*/
 
 iframe {
