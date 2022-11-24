@@ -1,12 +1,12 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     scrollbar-color: transparent transparent;
 }
 
 /*général*/
+
+html {
+    scroll-behavior: smooth;
+}
 
 main {
     text-align: center;
@@ -14,24 +14,12 @@ main {
     padding-bottom: 10%;
 }
 
-h1,
-h2 {
-    color: var(--secondary-color);
-    font-family: 'Amatic SC', cursive;
-}
-
 h1 {
-    font-size: 48px;
     padding: 8% 0;
 }
 
 h2 {
-    font-size: 40px;
     margin: 8% 0;
-}
-
-h3 {
-    font-size: 30px;
 }
 
 p {
@@ -50,11 +38,6 @@ main a {
 
 /*sticky*/
 
-/*origin
-https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
-*/
-
-/* Sticky navigation*/
 .sticky {
     position: sticky;
     top: 0;
@@ -63,12 +46,6 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
     z-index: 999;
 }
 
-/**
- * Display lists on a single line.
- * @bugfix Prevent webkit from removing list semantics
- * 1. Add a non-breaking space
- * 2. Make sure it doesn't mess up the DOM flow
- */
 .list-inline {
     list-style: none;
     margin-left: -0.5em;
@@ -80,9 +57,7 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
 
 .list-inline>li:before {
     content: "\200B";
-    /* 1 */
     position: absolute;
-    /* 2 */
 }
 
 .list-inline a {
@@ -90,10 +65,6 @@ https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
     color: var(--text-color-white);
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /*carousel*/
@@ -107,12 +78,14 @@ main .container {
     overflow: hidden;
     margin: auto;
 }
+
 main .img-carou {
     position: relative;
     width: 350px;
     height: 320px;
     flex-shrink: 0;
 }
+
 main img {
     width: 320px;
     height: 280px;
@@ -124,18 +97,22 @@ main img {
     top: 45%;
     right: 0;
 }
+
 .prev {
     position: absolute;
     top: 45%;
     left: 0;
 }
+
 figcaption {
     display: flex;
     justify-content: space-around;
 }
+
 figcaption p {
-padding: 0;
+    padding: 0;
 }
+
 figure {
     background-color: var(--secondary-color);
     border-radius: 10px;
@@ -153,26 +130,29 @@ figure {
         height: 480px;
     }
 
-   main .img-carou {
+    main .img-carou {
         width: 525px;
         height: 480px;
     }
+
     main img {
         width: 500px;
         height: 440px;
         margin-top: 3%;
     }
 }
+
 @media screen and (min-width: 1200px) {
     main .container {
         width: 630px;
         height: 576px;
     }
 
-   main .img-carou {
+    main .img-carou {
         width: 630px;
         height: 576px;
     }
+
     main img {
         width: 580px;
         height: 500px;

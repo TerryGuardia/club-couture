@@ -1,6 +1,6 @@
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
-const items = document.querySelectorAll(".item");
+let toggle = document.querySelector(".toggle");
+let menu = document.querySelector(".menu");
+let items = document.querySelectorAll(".item");
 
 /* Toggle mobile menu */
 function toggleMenu() {

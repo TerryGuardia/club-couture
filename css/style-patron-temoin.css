@@ -1,55 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*général*/
 
 .mx-text {
     margin: 0 10%;
 }
+
 main {
     text-align: center;
     background-color: var(--primary-color);
     padding-bottom: 200px;
 }
 
-h1, h2{
-    color: var(--secondary-color);
-    font-family: 'Amatic SC', cursive;
-}
 
 h1 {
-    font-size: 48px;
     padding: 8% 0;
 }
 
 h2 {
-    font-size: 40px;
     margin: 8% 3%;
     text-align: left;
 }
 
-p, main li {
+p,
+main li {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
+
 main img {
     width: 100%;
     margin-top: 15%;
 }
+
 main li {
     padding-bottom: 15px;
 }
+
 @media screen and (min-width: 810px) {
     main img {
         margin-top: 12%;
         width: 90%;
     }
+
     .mx-text {
         margin: 0 15%;
     }
+
     article {
         margin: 0 5%;
     }
@@ -60,6 +55,7 @@ main li {
         margin-top: 8%;
         width: 80%;
     }
+
     article {
         margin: 0 10%;
     }

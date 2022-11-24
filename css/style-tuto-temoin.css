@@ -1,19 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*général*/
 
 .mx-text {
     margin: 0 10%;
-}
-
-@media screen and (min-width: 1000px) {
-    .mx-text {
-        margin: 0 20%;
-    }
 }
 
 main {
@@ -21,26 +9,20 @@ main {
     background-color: var(--primary-color);
 }
 
-h1,
-h2,
-#promote {
-    color: var(--secondary-color);
-    font-family: 'Amatic SC', cursive;
-}
-
 h1 {
-    font-size: 48px;
     padding: 8% 0;
 }
 
 h2 {
-    font-size: 39px;
     margin: 10% 3%;
 }
 
 #promote {
     font-size: 36px;
     margin: 10% 3%;
+    color: var(--secondary-color);
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
 }
 
 section:nth-of-type(2) h2 {
@@ -58,9 +40,11 @@ main li {
 }
 
 /*images de présentation*/
+
 section:first-of-type p {
     margin-bottom: 5%;
 }
+
 .gallerie {
     display: flex;
     justify-content: space-between;
@@ -84,40 +68,8 @@ section:first-of-type p {
     margin: 8% 0;
 }
 
-@media screen and (min-width: 810px) {
-    #stepbystep article div {
-        margin: 4% 0;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    #stepbystep article div {
-        margin: 2% 0;
-    }
-}
-
-/*section matériel*/
-@media screen and (min-width: 810px) {
-    .mats h2 {
-        margin: 5% 15%;
-    }
-
-    .mats ul {
-        margin: 0 25%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .mats h2 {
-        margin-left: 5% 25%;
-    }
-
-    .mats ul {
-        margin-left: 0 35%;
-    }
-}
-
 /*images section etape*/
+
 figure {
     margin: 3% 0;
 }
@@ -130,44 +82,65 @@ figure img {
     width: 95%;
 }
 
-#promote {
-    text-align: center;
-}
-
 #promote a {
     text-decoration: none;
     color: var(--secondary-color-dark);
 }
-@media screen and (max-width: 620px) {
-    figure img {
-        width: 200px;
-    }
-}
-@media screen and (min-width: 621px) and (max-width: 1100px) {
-    figure img {
-        width: 312px;
-    }
-}
-@media screen and (min-width: 1101px) {
-    figure img {
-        width: 400px;
-    }
-}
+
 /*video*/
 
 iframe {
     margin: 15% 0 20% 0;
 }
 
+
+@media screen and (max-width: 620px) {
+    figure img {
+        width: 200px;
+    }
+}
+
 @media screen and (min-width: 810px) {
+    #stepbystep article div {
+        margin: 4% 0;
+    }
+
     iframe {
         width: 600px;
         height: 400px;
     }
+
+    .mats h2 {
+        margin: 5% 15%;
+    }
+
+    .mats ul {
+        margin: 0 25%;
+    }
+}
+
+@media screen and (min-width: 621px) and (max-width: 1100px) {
+    figure img {
+        width: 312px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
+    .mx-text {
+        margin: 0 20%;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    figure img {
+        width: 400px;
+    }
+
     iframe {
         margin: 10% 0 15% 0;
+    }
+
+    #stepbystep article div {
+        margin: 2% 0;
     }
 }

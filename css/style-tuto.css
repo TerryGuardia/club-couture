@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*général*/
 
 main {
@@ -12,25 +6,12 @@ main {
     padding-bottom: 10%;
 }
 
-h1,
-h2,
-h3 {
-    color: var(--secondary-color);
-    font-family: 'Amatic SC', cursive;
-}
-
 h1 {
-    font-size: 48px;
     padding: 8% 0;
 }
 
 h2 {
-    font-size: 40px;
     margin: 8% 0;
-}
-
-h3 {
-    font-size: 30px;
 }
 
 p {
@@ -38,14 +19,17 @@ p {
     text-align: justify;
     padding-bottom: 10%;
 }
+
 .mx-text {
     margin: 0 10%;
 }
+
 main a {
     text-decoration: none;
     color: #262524;
     width: min-content;
 }
+
 /*tuto*/
 
 main section div {
@@ -53,9 +37,11 @@ main section div {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 main section div img {
     border-radius: 10px;
 }
+
 main section div div {
     margin: 3% 0;
     width: fit-content;
@@ -63,52 +49,46 @@ main section div div {
     display: flex;
     flex-direction: column;
 }
+
 main section div div p {
     margin: 2% 3%;
 }
+
 main section div div p::after {
     content: " lire la suite";
     color: var(--secondary-color-dark);
 }
+
 /*sticky*/
 
-/*origin
-https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/
-*/
-
-/* Sticky navigation*/
 .sticky {
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
     background-color: var(--secondary-color);
     padding: 15px 0;
 }
 
-/**
- * Display lists on a single line.
- * @bugfix Prevent webkit from removing list semantics
- * 1. Add a non-breaking space
- * 2. Make sure it doesn't mess up the DOM flow
- */
 .list-inline {
-	list-style: none;
-	margin-left: -0.5em;
-	margin-right: -0.5em;
-	padding: 0;
+    list-style: none;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
 }
 
-.list-inline > li:before {
-	content: "\200B"; /* 1 */
-	position: absolute; /* 2 */
+.list-inline>li:before {
+    content: "\200B";
+    position: absolute;
 }
+
 .list-inline a {
     text-decoration: none;
     color: var(--text-color-white);
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
 }
+
 html {
     scroll-behavior: smooth;
 }

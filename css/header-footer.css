@@ -5,21 +5,43 @@
     --text-color-white: white;
 
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: url(/img/pattern.png);
 }
-/*main*/
+
+/*general*/
 main {
     max-width: 1200px;
     margin: auto;
 }
 
-/**header origin
-https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535
-/
+h1,
+h2,
+h3 {
+    color: var(--secondary-color);
+    font-family: 'Amatic SC', cursive;
+}
 
+h1 {
+    font-size: 48px;
+}
 
-/* Basic styling */
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+/* header */
 
 header {
     font-family: 'Amatic SC', cursive;
@@ -89,7 +111,7 @@ header li a:hover {
     display: block;
 }
 
-/* Submenu up from mobile screens */
+/* Sous menu */
 .submenu {
     display: none;
 }
@@ -170,7 +192,10 @@ footer ul {
     footer nav {
         display: none;
     }
-.hidden {display: none;}
+
+    .hidden {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 961px) {
@@ -178,24 +203,29 @@ footer ul {
         max-width: 1200px;
         margin: auto;
     }
+
     footer div {
         display: flex;
         justify-content: space-between;
     }
+
     footer div div {
         width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     footer nav {
         margin-top: 10px;
     }
+
     footer nav a {
         text-decoration: none;
         color: var(--secondary-color);
         opacity: 0.6;
     }
+
     footer nav a:hover {
         opacity: 1;
         color: var(--secondary-color-dark);

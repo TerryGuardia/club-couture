@@ -1,27 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*général*/
 
 .mx-text {
     margin: 0 10%;
 }
 
+.fond_rose {
+    background-color: #D998DA;
+}
+
+.fond_jaune {
+    background-color: #DFC66D;
+}
+
+.fond_bleu {
+    background-color: #85AEEC;
+}
+
 main {
     background-color: var(--primary-color);
     padding-bottom: 15%;
     text-align: center;
-}
-
-
-h1,
-h2,
-h3 {
-    color: var(--secondary-color);
-    font-family: 'Amatic SC', cursive;
 }
 
 p,
@@ -31,17 +29,11 @@ main a {
 }
 
 h1 {
-    font-size: 48px;
     padding: 8% 0;
 }
 
 h2 {
-    font-size: 40px;
     margin: 10% 0;
-}
-
-h3 {
-    font-size: 32px;
 }
 
 /*planning*/
@@ -60,18 +52,6 @@ table {
     background-color: rgba(213, 146, 127, 0.5);
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-}
-
-.fond_rose {
-    background-color: #D998DA;
-}
-
-.fond_jaune {
-    background-color: #DFC66D;
-}
-
-.fond_bleu {
-    background-color: #85AEEC;
 }
 
 tfoot {
